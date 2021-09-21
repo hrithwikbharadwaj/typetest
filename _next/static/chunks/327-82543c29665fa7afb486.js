@@ -87,8 +87,8 @@
                         },
                         v = function(t) {
                             if (!t) return "";
-                            var e = t.type === r.bF.IMAGE ? t[r.Q_.HREF] : t[r.Q_.URL];
-                            return _(e, t[r.Q_.INTERNAL_LINK], t[r.Q_.PAGE_ID])
+                            // var e = t.type === r.bF.IMAGE ? t[r.Q_.HREF] : t[r.Q_.URL];
+                          return "";
                         };
                     return (0, p.jsx)(a.Z.Provider, {
                         value: {
@@ -136,7 +136,18 @@
             }(i || (i = {}));
             var u = n(85893),
                 c = function(t) {
-                   
+                    var e, n = t.subscription,
+                        o = t.spaceID;
+                    return (null === n || void 0 === n ? void 0 : n.product_id) !== r.f4 || (null === n || void 0 === n ? void 0 : n.status) !== i.ACTIVE || null !== n && void 0 !== n && null !== (e = n.metadata) && void 0 !== e && e.affiliate ? (0, u.jsx)(a.default, {
+                        href: "".concat(r.og, "?utm_source=watermark:").concat(o),
+                        children: (0, u.jsx)("a", {
+                            target: "_new",
+                            children: (0, u.jsxs)("div", {
+                                className: d().container,
+                                
+                            })
+                        })
+                    }) : (0, u.jsx)(u.Fragment, {})
                 }
         },
         45051: function(t, e, n) {
@@ -448,7 +459,7 @@
                 t.HREF = "href", t.OPEN_OPTIONS = "openOptions", t.OPTION_INDEX = "optionIndex", t.CODE_LANGUAGE = "code_language", t.URL = "url", t.WIDTH = "width", t.HEIGHT = "height", t.WIDTH_MAX = "width_max", t.BACKGROUND = "background", t.BACKGROUND_IMAGE = "backgroundImage", t.COLOR = "color", t.GRADIENT = "gradient", t.ALIGN = "align", t.VERTICAL_ALIGN = "vertical_align", t.STYLE = "style", t.ICON = "icon", t.HTML = "html", t.FILE = "file", t.KEEP_ASPECT_RATIO = "keep_aspect_ratio", t.ASPECT_RATIO = "aspect_ratio", t.INTERNAL_LINK = "internal_link", t.PAGE_ID = "page_id", t.OPEN_IN_NEW_TAB = "open_in_new_tab", t.MOBILE_HIDE = "mobile_hide", t.MOBILE_DIRECTION = "mobile_direction", t.MOBILE_REVERSE_COLUMNS = "mobile_reverse_columns"
             }(d || (d = {})),
             function(t) {
-                t.TYPE = "data-slate-type", t.URL = "data-slate-url", t.BACKGROUND = "data-slate-background", t.BACKGROUND_IMAGE = "data-slate-background-image", t.HEIGHT = "data-slate-height", t.WIDTH = "data-slate-width", t.WIDTH_MAX = "data-slate-width-max", t.ALIGN = "data-slate-align", t.VERTICAL_ALIGN = "data-slate-vertical-align", t.STYLE = "data-slate-style", t.ASPECT_RATIO = "data-slate-aspect-ratio", t.HREF = "data-slate-href", t.INTERNAL_LINK = "data-slate-internal-link", t.PAGE_ID = "data-slate-page-id", t.COLOR = "data-slate-color", t.ICON = "data-slate-icon", t.HTML = "data-slate-html", t.FILE = "data-slate-file", t.GRADIENT = "data-slate-gradient", t.OPEN_IN_NEW_TAB = "data-slate-open-in-new-tab", t.MOBILE_HIDE = "data-slate-mobile-hide", t.MOBILE_DIRECTION = "data-slate-mobile-direction", t.MOBILE_REVERSE_COLUMNS = "data-slate-mobile-reverse-columns", t.KEEP_ASPECT_RATIO = "data-slate-keep-aspect-ratio"
+             t.BACKGROUND_IMAGE = "data-slate-background-image", t.HEIGHT = "data-slate-height", t.WIDTH = "data-slate-width", t.WIDTH_MAX = "data-slate-width-max", t.ALIGN = "data-slate-align", t.VERTICAL_ALIGN = "data-slate-vertical-align", t.STYLE = "data-slate-style", t.ASPECT_RATIO = "data-slate-aspect-ratio", t.HREF = "data-slate-href", t.PAGE_ID = "data-slate-page-id", t.COLOR = "data-slate-color", t.ICON = "data-slate-icon", t.HTML = "data-slate-html", t.FILE = "data-slate-file", t.GRADIENT = "data-slate-gradient", t.OPEN_IN_NEW_TAB = "data-slate-open-in-new-tab", t.MOBILE_HIDE = "data-slate-mobile-hide", t.MOBILE_DIRECTION = "data-slate-mobile-direction", t.MOBILE_REVERSE_COLUMNS = "data-slate-mobile-reverse-columns", t.KEEP_ASPECT_RATIO = "data-slate-keep-aspect-ratio"
             }(u || (u = {})),
             function(t) {
                 t.HORIZONTAL = "direction_horizontal", t.VERTICAL = "direction_vertical"
@@ -471,10 +482,25 @@
             }(I || (I = {}))
         },
         47096: function(t) {
-           
+            t.exports = {
+                container: "Watermark_container__4OqGR"
+            }
         },
-    
-         
+        81054: function(t) {
+            t.exports = {
+                icon: "PopupNotice_icon__2yD7o",
+                iconClose: "PopupNotice_iconClose__drVr4",
+                content: "PopupNotice_content__3kIBE",
+                popupContainer: "PopupNotice_popupContainer__11xqf",
+                popupContainerTopOpen: "PopupNotice_popupContainerTopOpen__226y3",
+                popupContainerBottomOpen: "PopupNotice_popupContainerBottomOpen__3-DOE",
+                popupContainerTop: "PopupNotice_popupContainerTop__2cfO8",
+                popupContainerBottom: "PopupNotice_popupContainerBottom__3y4OZ",
+                popupContainerRight: "PopupNotice_popupContainerRight__Z8dgg",
+                popupContainerLeft: "PopupNotice_popupContainerLeft__2LzAq",
+                popupContainerCenter: "PopupNotice_popupContainerCenter__2nSoC"
+            }
+        },
         64476: function(t) {
             t.exports = {
                 container: "Home_container__1EcsU",
